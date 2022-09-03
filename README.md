@@ -1,6 +1,6 @@
 20220903_Design Shop
 
-Link zur Seite: 
+Link zur Seite: https://weimingtay.github.io/20220903_TheDesignShop/
 
 ## Aufgabenstellung
 
@@ -16,6 +16,6 @@ Farbe: #323A45 / #848484
 https://docs.google.com/spreadsheets/d/1kBJOkmLoV7Ufl4CpR5b8y-t0BNw7APTiVCVARIRiWGY/edit#gid=0
 
 ## Ergebnisvorschau
-![](assets/img/readme/Lev3_6_Project_css-vertiefung_the-design-shop.gif)
-![](assets/img/readme/Lev3_6_Project_css-vertiefung_the-design-shop-desktop.png)
-![](assets/img/readme/Lev3_6_Project_css-vertiefung_the-design-shop-mobile.png)
+![desktop ansicht](assets/img/readme/Lev3_6_Project_css-vertiefung_the-design-shop.gif)
+![mobile ansicht](assets/img/readme/Lev3_6_Project_css-vertiefung_the-design-shop-desktop.png)
+![funktions übersicht](assets/img/readme/Lev3_6_Project_css-vertiefung_the-design-shop-mobile.png)
