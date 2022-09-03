@@ -1,0 +1,171 @@
+/* ====================
+Allgemein
+==================== */
+/* Font: Karla
+Farbe: #323A45 / #848484 */
+/* ==========
+fonts
+========== */
+@font-face {
+    font-family: 'Karla';
+    src:    url(../fonts/Karla/Karla-VariableFont_wght.ttf),
+            url(../fonts/Karla/Karla-Italic-VariableFont_wght.ttf),
+            url(../fonts/Karla/static/Karla-Bold.ttf),
+            url(../fonts/Karla/static/Karla-ExtraBold.ttf),
+            url(../fonts/Karla/static/Karla-Regular.ttf);
+}
+/* ==========
+Styling
+========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Karla';
+    color: #323A45;
+}
+a {
+    text-decoration: none;
+    color: #323A45;
+}
+a:hover {
+    color: #848484 ;
+}
+ul {
+    list-style: none;
+}
+/* klappt nicht */
+.bold {
+    text-shadow: .3px .3px black, -.3px -.3px black;
+}
+.italic {
+    font-style: italic;
+}
+/* ====================
+HEADER
+==================== */
+header {
+    margin: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+header ul {
+    display: flex;
+}
+header li {
+    margin-left: 3rem;
+}
+/* ====================
+MAIN
+==================== */
+/* ===== main grid ===== */
+main {
+    margin: 0 5rem;
+
+}
+/* ===== sections ===== */
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.big_image {
+    grid-column: 1/ span 3;
+}
+/* ===== article ===== */
+.article div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.8rem;
+}
+.article div div {
+    display: flex;
+    flex-direction: column;
+}
+h4 {
+    color: #848484;
+}
+main img {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+img:hover {
+    opacity: .3;
+}
+/* ====================
+FOOTER
+==================== */
+footer {
+    margin-top: 3rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6rem;
+    padding-bottom: 2rem;
+}
+footer div:last-of-type {
+    margin-right: 20vw;
+}
+footer h5 {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+@media only screen and (max-width: 600px) {
+    /* Allgemein */
+    /* Header */
+    header {
+        margin: 1rem;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header ul {
+        flex-direction: column;
+        text-align: end;
+    }
+    header li {
+        margin-bottom: .3rem;
+    }
+    /* Main */
+    main {
+        margin-left: 1rem;
+    }
+    section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section div {
+        width: 100%;
+    }
+
+    .big_image {
+        grid-column: 1/ span 1;
+    }
+    /* Footer */
+    footer {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: end;
+    }
+    footer h5 {
+        margin-bottom: .3rem;
+    }
+    footer div {
+        margin-bottom: 1.3rem;
+        font-size: .8rem;
+
+    }
+    footer div:last-of-type {
+        margin-right: 0;
+    }
+}
