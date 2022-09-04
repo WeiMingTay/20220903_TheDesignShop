@@ -11,12 +11,30 @@
 <body>
     <header>
         <h1><a href="#">The Design Shop</a></h1>
-        <nav>
+        <nav id="desktopNav">
             <ul>
                 <li><a href="#">Weekly Recommendations</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">T D B</a></li>
+                <li><a target="_blank" href="https://de.wikipedia.org/wiki/Tag_der_Briefmarke">T D B</a></li>
             </ul>
+        </nav>
+        <nav id="mobileNav">
+            <div class="schichten">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger" class="hamburger">
+                <span class="linie"></span>
+                <span class="linie"></span>
+                <span class="linie"></span>
+                </label>
+                
+                <nav class="topMenu">
+                <ul>
+                    <li><a href="#">Weekly Recommendations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">T D B</a></li>
+                </ul>
+                </nav>
+            </div>
         </nav>
     </header>
     <main>
@@ -416,34 +434,37 @@
         </section>
     </main>
     <footer>
-        <div>
-            <h5>The Design Shop</h5>
-            <p>Carefully curated online design store.</p>
-            <p>founded and designed by <span class="bold">Ruby Bacanovic</span></p>
-        </div>
-        <div id="contact">
-            <h5>Contact</h5>
-            <ul>
-                <li><a href="mailto:ruby@designshop.com">Email us</a></li>
-                <li><a href="#">Work with us</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Newsletter</h5>
-            <p><a href="#">Click here to<span class="bold"> subscribe.</span></a></p>
-            <p class="italic">Don't worry. We hate spam too.</p>
-        </div>
-        <div>
-            <h5>Find us here</h5>
-            <nav>
+        <section>
+            <div>
+                <h5>The Design Shop</h5>
+                <p>Carefully curated online design store.</p>
+                <p>founded and designed by <span class="bold">Ruby Bacanovic</span></p>
+            </div>
+            <div id="contact">
+                <h5>Contact</h5>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li><a href="mailto:ruby@designshop.com">Email us</a></li>
+                    <li><a href="#">Work with us</a></li>
                 </ul>
-            </nav>
-        </div>
-
+            </div>
+            <div>
+                <h5>Newsletter</h5>
+                <p><a href="#">Click here to<span class="bold"> subscribe.</span></a></p>
+                <p class="italic">Don't worry. We hate spam too.</p>
+            </div>
+            <div>
+                <h5>Find us here</h5>
+                <nav>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <p>© <span id="year">2022</span> The Design Shop · <a href="#">The Design Blog</a></p>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
